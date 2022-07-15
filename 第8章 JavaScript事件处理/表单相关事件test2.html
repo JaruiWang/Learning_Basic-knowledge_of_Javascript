@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table align="center" width="300" height="160" border="0">
+        <form action="" name="form1">
+            <tr>
+                <td width="80" align="right">用户名：</td>
+                <td width="200">
+                    <input type="text" onfocus="txtfocus()"  Onblur="txtblur()">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">密码：</td>
+                <td>
+                    <input type="text"  onfocus="txtfocus()"  Onblur="txtblur()">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">真实姓名：</td>
+                <td>
+                    <input type="text"  onfocus="txtfocus()"  onbluR="txtblur()">
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td align="right">性别：</td>
+                <td>
+                    <input type="text"  onfocus="txtfocus()"  onbluR="txtblur()">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">邮箱：</td>
+                <td>
+                    <input type="text"  onfocus="txtfocus()"  onblur="txtblur()">
+                </td>
+            </tr>
+        </form>
+    </table>
+
+    <script>
+        function txtfocus(){
+            var e=window.event;
+            var obj=e.srcElement;
+            obj.style.background="#FF9966";
+        }
+        function txtblur(){
+            var e=window.event;
+            var obj=e.srcElement;
+            obj.style.background="#FFFFFF";
+        }
+    </script>
+
+</body>
+</html>

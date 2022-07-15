@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <span>边框宽度：</span>
+    <input type="text" name="border" id="border">
+    <input type="button" value="添加边框" onclick="add_border()">
+    <br>
+    <br>
+    <img src="./rabbit.webp" alt="" name="rabbit" width="300" height="300">
+
+    <script>
+        function add_border(){
+            border_num=document.getElementById("border").value;
+            document.images["rabbit"].border=border_num;
+        }
+    </script>
+</body>
+</html>

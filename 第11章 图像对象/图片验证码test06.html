@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div name="div1" id="div1">
+        <script>
+            var str="";
+            var img="";
+            var strsource=["明","天","日","科","技","会","更","好","创","新"];
+            for(var i=0;i<4;i++){
+                var n=Math.floor(Math.random()*strsource.length);
+                str=str+strsource[n];
+                img=img+"<img src=./验证码图片/"+n+".png width=19 height=20>";
+                
+            }
+            div1.innerHTML=img;
+            document.write("<br>验证码输出的是:  "+str);
+
+        </script>
+
+    </div>
+    <script>
+
+    </script>
+</body>
+</html>

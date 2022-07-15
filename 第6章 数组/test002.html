@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table bgcolor="#CC00FF">
+        <tr height="30" bgcolor="#FFFFFF">
+            <td align="center" width="50">序号</td>
+            <td align="center" width="100">省份</td>
+            <td align="center" width="100">省会</td>
+            <td align="center" width="260">旅游景点</td>
+        </tr>
+
+        <script>
+            var province=new Array("黑龙江省","吉林省","辽宁省");
+            var city=new Array("哈尔滨市","长春市","沈阳市");
+            var tourist=new Array("太阳岛 圣索菲亚教堂 中央大街","净月潭 长影世纪城 动植物园","沈阳故宫 沈阳北陵 张氏帅府");
+
+            for(var i=0;i<province.length;i++){
+                document.write("<tr height=26 bgcolor='#FFFFFF'>");
+                document.write("<td align=center>"+(i+1)+"</td>");
+                document.write("<td align=center>"+province[i]+"</td>");
+                document.write("<td align=center>"+city[i]+"</td>");
+                document.write("<td align=center>"+tourist[i]+"</td>");
+                document.write("</tr>");
+            }
+        </script>
+
+    </table>
+</body>
+</html>

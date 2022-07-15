@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getAverage(score1,score2,score3){
+            var average=(score1+score2+score3)/3;
+            return average;
+        }
+        function getResult(score1,score2,score3){
+            document.write("3个评委给出的分数是:"+score1+"分，"+score2+"分，"+score3+"分<br>");
+            var result=getAverage(score1,score2,score3);
+            document.write("周星星的最后得分是："+result+"分");
+        }   
+        
+    </script>
+</head>
+<body>
+    <script>
+        getResult(91,89,93);
+    </script>
+    
+</body>
+</html>

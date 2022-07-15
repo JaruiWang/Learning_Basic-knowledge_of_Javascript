@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // length属性
+        //  var newString=new String("我来了");
+        //  var p=newString.length;
+        //  alert(p);
+        // var str_a="abd";
+        // var p=str_a.length;
+        // alert(p);
+
+
+        // constructor属性
+        // var newStr=new String("One World One Dream");
+        // if (newStr.constructor==String){
+        //     alert("这是一个字符串对象");
+        // }
+
+        // prototype属性
+        String.prototype.getlength=function(){
+            alert(this.length);
+        }
+        var str=new String("abcdef");
+        str.getlength();
+    </script>
+</body>
+</html>

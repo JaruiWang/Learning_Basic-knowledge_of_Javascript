@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生成指定位数的随机数</title>
+    <script>
+        function ran(digit){
+            var result="";
+            for(i=0;i<digit;i++){
+                result=result+(Math.floor(Math.random()*10));
+            }
+            alert(result)
+        }
+    </script>
+</head>
+<body>
+    <p>
+        请输入要生成随机数的位数：
+    </p>
+    <form name="form">
+        <input type="text" name="digit">
+        <input type="button" value="生成" onclick="ran(form.digit.value)" >
+    </form>
+
+    <script>
+        // var r=5;
+        // var circumference=2*Math.PI*r;
+        // var area=Math.PI*r*r;
+        // document.write("圆的周长是"+circumference);
+        // document.write("圆的周长是"+parseInt(circumference));
+
+        // var larger=Math.max(1,2.1);
+        // document.write("larger是"+larger+"<br>");
+
+        // var result=Math.pow(larger,2)
+        // document.write("larger的平方是"+result+"<br>");
+
+        // value=-1.05;
+        // var result=Math.round(value);
+        // document.write(result+"<br>");
+    </script>
+</body>
+</html>

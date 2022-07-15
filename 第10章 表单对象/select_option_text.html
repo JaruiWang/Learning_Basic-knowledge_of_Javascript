@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        <table>
+            <tr>
+                <td>可选职位</td>
+                <td></td>
+                <td>已选职位</td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- 添加“可选职位”的列表框 -->
+                    <select name="job" size="6" id="" multiple="multiple" style="width:60px;height: 112px;" >
+                        <option value="歌手">歌手</option>
+                        <option value="演员">演员</option>
+                        <option value="画家">画家</option>
+                        <option value="教师">教师</option>
+                        <option value="公务员">公务员</option>
+                        <option value="职员">职员</option>
+                    </select>
+                </td>
+
+                <td>
+                    <!-- 添加 “<<” 和 “>>” 按钮 -->
+                    <input type="button" value=">>" onclick="myJob()">
+                    <br>
+                    <input type="button" value="<<" onclick="toJob()">
+                </td>
+
+                <td>
+                    <!-- 添加“已选职位”的列表框 -->
+                    <select name="myjob" size="6" id="" multiple="multiple" style="width:60px;height: 112px;">
+                        
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+
+    </form>
+
+    <script>
+        function myJob(){
+            var joblength=document.myform.job.length;
+            for(var i=joblength-1; i>-1; i--){
+                if(document.myform.job[i].selected){  // 如果该选项被选中
+                    var myOption=new Option(document.myform.job[i].text,document.myform.job[i].value);
+                    document.myform.myjob.options[document.myform.myjob.options.length]=myOption;
+                    document.myform.job.remove(i);
+                }
+            }
+        }
+
+        function toJob(){
+            var joblength1=document.myform.myjob.length;
+            for(var i=joblength1-1; i>-1; i--){
+                if(document.myform.myjob[i].selected){  // 如果该选项被选中
+                    var myOption=new Option(document.myform.myjob[i].text,document.myform.myjob[i].value);
+                    document.myform.job.options[document.myform.job.options.length]=myOption;
+                    document.myform.myjob.remove(i);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

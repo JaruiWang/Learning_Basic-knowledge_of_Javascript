@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function check(){
+            var duihuanma=form1.duihuanma.value;
+            if (duihuanma=="7758258"){
+                alert("取票成功");
+            }else{
+                alert("输入错误！");
+                }
+
+        }
+
+    </script>
+    <table>
+        <form name="form1" action="">
+            <tr>取票系统</tr>
+            <tr>
+                <td>请输入兑换码：</td>
+                <td><input type="text" name="duihuanma"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="取票" onclick="check()"></td>
+                <td><input type="button" value="重新输入"></td>
+            </tr>
+
+
+        </form>
+    </table>
+</body>
+</html>

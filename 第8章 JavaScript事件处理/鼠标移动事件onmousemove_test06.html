@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=0,y=0;
+        function MousePlace(){
+            x=window.event.x;
+            y=window.event.y;
+            document.getElementById("position").innerHTML="鼠标在页面中的当前位置的横坐标X："+x+" 纵坐标Y: "+y;
+        }
+        document.onmousemove=MousePlace;
+    </script>
+    <span id="position"></span>
+</body>
+</html>

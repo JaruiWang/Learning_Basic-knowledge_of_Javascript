@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- cellspacing属性 单元格之间的空间 -->
+    <table cellspacing=1 bgcolor="#CC00FF">
+        <tr height="30" bgcolor="#FFFFFF">
+            <td align="center">排名</td>
+            <td align="center">影片</td>
+            <td align="center">票房</td>
+        </tr>
+
+        <script>
+            var movieArr=new Array("魔兽","美人鱼","西游记之孙悟空三大白骨精","疯狂动物城","美国队长3");
+            var boxofficeArr=new Array(14.7,33.9,12,15.3,12.5);
+            var sortArr=new Array(14.7,33.9,12,15.3,12.5);
+
+            function ascOrdor(x,y){
+            if(x<y){
+                return 1;
+            }
+            else{
+                return -1;
+            }
+            }
+
+            sortArr.sort(ascOrdor);
+            for(var i=0;i<sortArr.length;i++){
+                for(var j=0;j<sortArr.length;j++){
+                    if(sortArr[i]==boxofficeArr[j]){  //获得票房排序后对应的电影名称的引索
+                        document.write("<tr height=26 bgcolor=#FFFFFF>");
+                        document.write("<td align='center'>"+(i+1)+"</td>");
+                        document.write("<td class='left'>"+movieArr[j]+"</td>");
+                        document.write("<td align='center'>"+sortArr[i]+"亿元</td>");
+                        document.write("</tr>");
+
+                    }
+
+
+                }
+            }
+
+        </script>
+
+    </table>
+</body>
+</html>

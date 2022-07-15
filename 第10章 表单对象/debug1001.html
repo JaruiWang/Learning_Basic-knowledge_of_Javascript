@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>第10章章后练习</title>
+</head>
+<body>
+<script type="text/javascript">
+function checkinput(){
+	if(form1.name.value==""){
+		alert("名字不能为空");
+   		form1.name.focus();
+		return false;
+    }		        		
+    if(form1.pwd.value==""){
+		alert("密码不能为空");
+		form1.pwd.focus();
+		return false ;
+	}
+	return true;
+}	
+</script>
+<form id="form1" name="form1" method="post" action="">
+姓名：<input name="name" type="text" size="20" /><br>
+密码：<input name="pwd" type="password" size="20" /><br>
+<input type="submit" name="submit" onclick="return checkinput()" value="提交" />
+<input type="reset" name="reset" onclick="form.reset(); return false;" value="重置" />
+</form>
+</body>
+</html>

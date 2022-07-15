@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigDiv{
+            /* border: 1px solid; */
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            height: 130px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="poemDiv" class="bigDiv">
+        <div class="poemtitle">春晓</div>
+        <div class="poem">春眠不觉晓</div>
+        <div class="poem">处处闻啼鸟</div>
+        <div class="poem">夜来风雨声</div>
+    </div>
+    <form  name="myform" action="">
+        请输入最后一句：<input type="text" name="last">
+        <input type="button" value="添加" onclick="completePeom()">
+    </form>
+
+    <script>
+        function completePeom(){
+            var div=document.createElement('div');
+            div.className='poem';
+            var last=myform.last.value;
+
+            txt=document.createTextNode(last);
+            div.appendChild(txt);
+
+            // document.getElementById("poemDiv").appendChild(div);
+            poemDiv.appendChild(div);
+        }
+    </script>
+</body>
+</html>

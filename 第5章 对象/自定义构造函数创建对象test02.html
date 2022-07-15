@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Actor(name,work,achievement){
+            this.name=name;
+            this.work=work;
+            this.achievement=achievement;
+            this.introduction=function(){
+                document.write("中文网:"+this.name);
+                document.write("<br>代表作品:"+this.work);
+                document.write("<br>主要成就:"+this.achievement);
+            }
+        }
+
+        var Actor1=new Actor("维尔 史密斯","《独立日》、《黑衣人》","奥斯卡金像奖最佳男主角提名");
+        Actor1.introduction();
+    </script>
+</body>
+</html>

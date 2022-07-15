@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜大小</title>
+    <script>
+        function guest(){
+            var random_number=Math.floor(Math.random()*10);
+            if(form.num[0].checked){
+                alert("a"+random_number)
+                if(random_number >= 0 && random_number <= 4){
+			        alert("随机数是："+random_number+"\n您猜对了");
+		            }else{
+			        alert("随机数是："+random_number+"\n您猜错了");
+		            }
+            }
+
+
+            if(form.num[1].checked){
+                alert("b"+random_number);
+                if(random_number >= 0 && random_number <= 4){
+			        alert("随机数是："+random_number+"\n您猜错了");
+		            }else{
+			        alert("随机数是："+random_number+"\n您猜对了");
+		            }
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <p>
+        猜数字：0-4为小，5-9为大
+    </p>
+    <form name="form">
+        <input type="radio" name="num" value="small" checked>小
+        <input type="radio" name="num" value="big" >大
+        <input type="button" name="but" value="猜一猜" onClick="guest()">
+    </form>
+
+
+</body>
+</html>

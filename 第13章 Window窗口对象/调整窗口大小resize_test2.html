@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var winheight,winsize,x;
+ 
+        function openwin(){
+            winheight=100;
+            winsize=100;
+            x=5;
+            // win2=window.open("new.html","","height=140,width=690");
+            win2=window.open("new.html","","scrollbars");
+            win2.moveTo(0,0);
+            win2.resizeTo(300,200);
+            
+        }
+    </script>
+
+    <a href="javascript:openwin()"> 打开一个自动改变大小的窗口 </a>
+</body>
+</html>

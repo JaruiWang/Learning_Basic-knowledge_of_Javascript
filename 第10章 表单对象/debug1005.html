@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<script type="text/javascript">
+var str = "学习JavaScript";
+function addWord(){
+	var txt=document.createElement("span");
+	txt.innerHTML=str;
+	document.getElementById("show").appendChild(txt);	
+}
+
+addWord();
+</script>
+</head>
+<body background="bg.gif">
+<form name="form1">
+abc<br />
+  <select name="tourist" size="6" multiple onclick="addWord()">
+    <option value="1">a</option>
+	<option value="2">b</option>
+	<option value="3">̫c</option>
+	<option value="4">d</option>
+	<option value="5">e</option>
+	<option value="6">f</option>
+  </select>
+</form>
+<p id="show"></p>
+</body>
+</html>

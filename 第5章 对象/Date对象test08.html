@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date1=new Date();
+        var theNextYear=date1.getFullYear()+1;
+        date1.setFullYear(theNextYear);
+        date1.setMonth(0);
+        date1.setDate(1);
+        var date2=new Date();
+        date3=new Date(2001,0,1);
+        // 月份1月，用0表示；2月用1表示，以此类推
+        document.write(date2);
+        document.write("<br>");
+        document.write(date3);
+
+        var time_distance=date1.getTime()-date2.getTime();
+        var days=Math.ceil(time_distance/(1000*60*60*24));
+        alert("今天距离明年的元旦还有"+days+"天");
+        
+    </script>
+
+</body>
+</html>

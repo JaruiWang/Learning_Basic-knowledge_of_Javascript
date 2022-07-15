@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function AddRow(bl){
+            var sel=document.getElementById("shoptype");
+            var newSelect=sel.cloneNode(bl);
+            var b=document.createElement("br");
+
+            di.appendChild(newSelect);
+            di.appendChild(b);
+        }
+    </script>
+    <form action="">
+        <hr>
+        <select name="shoptype" id="shoptype">
+            <option value="%">请选择类型</option>
+            <option value="0">数码电子</option>
+            <option value="1">家用电器</option>
+            <option value="2">床上用品</option>
+        </select>
+        <hr>
+        <div id="di"></div>
+        <input type="button" value="复制" id="" onclick="AddRow(false)">
+        <input type="button" value="深度复制" id="" onclick="AddRow(true)">
+    </form>
+</body>
+</html>

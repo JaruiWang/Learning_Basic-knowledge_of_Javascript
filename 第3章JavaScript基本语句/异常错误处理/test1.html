@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="I Like JavaScript";
+        try{
+            document.write(str.charat(0))
+        }
+        catch(exception){
+            alert("运行时由异常发生\n实际的错误信息是:"+exception.message+"\n错误类型的字符串为:"+exception.name);
+        }
+        finally{
+            alert("结束try...catch...finally语句");
+        }
+    </script>
+</body>
+</html>

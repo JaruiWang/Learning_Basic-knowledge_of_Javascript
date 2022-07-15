@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body background="./images/bg.gif">
+    <table>
+        <form name="form1" onsubmit="return AllSubmit()">
+            <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">所属类别:</td>
+                <td height="22" align="left">		    
+                  <select name="txt1" id="txt1">
+                    <option value="数码设备">数码设备</option>
+                    <option value="家用电器">家用电器</option>
+                    <option value="礼品工艺">日常用品</option>
+                  </select>
+                <select name="txt2" id="txt2">
+                    <option value="数码相机">数码相机</option>
+                    <option value="打印机">打印机</option>
+                </select></td>
+            </tr>
+
+              <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">商品名称:</td>
+                <td height="22" align="left"><input name="txt3" type="text" id="txt3" size="30" maxlength="50"></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">市场价格:</td>
+                <td height="22" align="left"><input name="txt4" type="text" id="txt4" size="10"></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">会员价格:</td>
+                <td height="22" align="left"><input name="txt5" type="text" id="txt5" size="10" maxlength="50"></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">商品简介:</td>
+                <td height="22" align="left"><textarea name="txt6" cols="35" rows="4" id="txt6"></textarea></td>
+              </tr>
+              <tr bgcolor="#FFFFFF">
+                <td height="22" align="right">商品数量:</td>
+                <td height="22" align="left"><input name="txt7" type="text" id="txt7" size="10"></td>
+              </tr>
+
+              <tr>
+                  <td><input name="sub" type="submit" id="sub2" value="提交">&nbsp;</td>
+                  <td><input type="reset" name="Submit2" value="重置"></td>
+              </tr>
+            
+            
+        </form>
+    </table>
+
+    <script>
+        function AllSubmit(){
+            var T=true;
+            var e=window.event;
+            var obj=e.srcElement;
+            for(var i=1;i<=7;i++){
+                if(eval("obj."+"txt"+i).value==""){
+                    T=false;
+                    break;
+                }
+            }
+
+            if(!T){
+                alert("提交的信息不允许为空");
+            }
+
+            return T;
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function delNode(){
+            var delN01=document.getElementById('di');
+            if(delN01.hasChildNodes()){
+                delN01.removeChild(delN01.lastChild);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>
+        删除节点
+    </h2>
+    <div id="di"><p>aaaaa</p><p>bbbbbb</p><p>ccccc</p></div>
+    <form action="">
+        <input type="button" value="删除" onclick="delNode()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            /* height: 350px; */
+            /* width: 350px; */
+        }
+    </style>
+</head>
+<body>
+    <img src="./rabbit.webp" id="image1" alt="" >
+
+    <script>
+        function get_imgwidth(){
+            var  imgWidth=image1.width;
+            alert(imgWidth);
+        }
+   
+        setTimeout("get_imgwidth()",1000);
+        // setInterval("get_imgwidth()",1000)
+
+    </script>
+</body>
+</html>

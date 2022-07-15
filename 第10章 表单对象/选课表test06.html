@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function checkitem(){
+
+            var checked_num=0;
+            
+            for(var i=0; i<form1.classitem.length;i++){
+                if(form1.classitem[i].checked){
+                    checked_num+=1;
+                }
+            }
+
+            if(checked_num>6){
+                alert("您最多可以选择6门课程");
+            }
+
+        }
+
+
+
+    </script>
+    <p>
+        请选择课程
+    </p>
+    <table>
+        <form action="" name="form1">
+            <tr>
+                <td><input type="checkbox" name="classitem" value="C语言" onclick="checkitem()"> C语言</td>
+                <td><input type="checkbox" name="classitem" value="高等数学" onclick="checkitem()"> 高等数学</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="classitem" value="机械制图" onclick="checkitem()"> 机械制图</td>
+                <td><input type="checkbox" name="classitem" value="计算机基础" onclick="checkitem()"> 计算机基础</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="classitem" value="单片机" onclick="checkitem()"> 单片机</td>
+                <td><input type="checkbox" name="classitem" value="Oracle数据库" onclick="checkitem()"> Oracle数据库</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="classitem" value="自动控制" onclick="checkitem()"> 自动控制</td>
+                <td><input type="checkbox" name="classitem" value="商务英语" onclick="checkitem()"> 商务英语</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="classitem" value="传感器" onclick="checkitem()"> 传感器</td>
+                <td><input type="checkbox" name="classitem" value="PLC设计基础" onclick="checkitem()"> PLC设计基础</td>
+            </tr>
+            <tr>
+                <input type="button" name="" id="" value="按钮" onclick="checkitem()">
+            </tr>
+
+        </form>
+    </table>
+</body>
+</html>
